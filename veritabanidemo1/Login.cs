@@ -18,5 +18,17 @@ namespace veritabanidemo1
             InitializeComponent();
             Services.DefaultMaterialFormTheme.UseTheme(this);
         }
+
+        private void btn_forgot_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lütfen emailinize gelen bağlantıya tıklayarak parolanızı sıfırlayınız.", "Parola Sıfırlama", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btn_go_register_Click(object sender, EventArgs e)
+        {
+            RegisterForm rgf = new RegisterForm();
+            rgf.Show();
+            this.Hide();
+        }
     }
 }

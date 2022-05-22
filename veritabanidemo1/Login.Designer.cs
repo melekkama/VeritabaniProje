@@ -28,15 +28,196 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.btn_go_register = new MaterialSkin.Controls.MaterialButton();
+            this.btn_forgot = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialTextBox1 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialTextBox2 = new MaterialSkin.Controls.MaterialTextBox();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_login = new MaterialSkin.Controls.MaterialButton();
+            this.pb_password = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.tb_email = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_go_register
+            // 
+            this.btn_go_register.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_go_register.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_go_register.Depth = 0;
+            this.btn_go_register.HighEmphasis = true;
+            this.btn_go_register.Icon = null;
+            this.btn_go_register.Location = new System.Drawing.Point(80, 614);
+            this.btn_go_register.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_go_register.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_go_register.Name = "btn_go_register";
+            this.btn_go_register.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_go_register.Size = new System.Drawing.Size(89, 36);
+            this.btn_go_register.TabIndex = 21;
+            this.btn_go_register.Text = "REGISTER";
+            this.btn_go_register.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btn_go_register.UseAccentColor = false;
+            this.btn_go_register.UseVisualStyleBackColor = true;
+            this.btn_go_register.Click += new System.EventHandler(this.btn_go_register_Click);
+            // 
+            // btn_forgot
+            // 
+            this.btn_forgot.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_forgot.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_forgot.Depth = 0;
+            this.btn_forgot.HighEmphasis = true;
+            this.btn_forgot.Icon = null;
+            this.btn_forgot.Location = new System.Drawing.Point(206, 614);
+            this.btn_forgot.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_forgot.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_forgot.Name = "btn_forgot";
+            this.btn_forgot.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_forgot.Size = new System.Drawing.Size(186, 36);
+            this.btn_forgot.TabIndex = 20;
+            this.btn_forgot.Text = "FORGOT MY PASSWORD";
+            this.btn_forgot.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.btn_forgot.UseAccentColor = false;
+            this.btn_forgot.UseVisualStyleBackColor = true;
+            this.btn_forgot.Click += new System.EventHandler(this.btn_forgot_Click);
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
+            this.materialLabel3.Location = new System.Drawing.Point(106, 241);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(256, 41);
+            this.materialLabel3.TabIndex = 19;
+            this.materialLabel3.Text = "Login to Account";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(168, 91);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_login
+            // 
+            this.btn_login.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_login.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btn_login.Depth = 0;
+            this.btn_login.HighEmphasis = true;
+            this.btn_login.Icon = null;
+            this.btn_login.Location = new System.Drawing.Point(80, 540);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btn_login.MinimumSize = new System.Drawing.Size(312, 48);
+            this.btn_login.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btn_login.Name = "btn_login";
+            this.btn_login.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btn_login.Size = new System.Drawing.Size(312, 48);
+            this.btn_login.TabIndex = 17;
+            this.btn_login.Text = "LOGIN";
+            this.btn_login.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btn_login.UseAccentColor = false;
+            this.btn_login.UseVisualStyleBackColor = true;
+            // 
+            // pb_password
+            // 
+            this.pb_password.AllowPromptAsInput = true;
+            this.pb_password.AnimateReadOnly = false;
+            this.pb_password.AsciiOnly = false;
+            this.pb_password.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pb_password.BeepOnError = false;
+            this.pb_password.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.pb_password.Depth = 0;
+            this.pb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.pb_password.HidePromptOnLeave = false;
+            this.pb_password.HideSelection = true;
+            this.pb_password.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.pb_password.LeadingIcon = null;
+            this.pb_password.Location = new System.Drawing.Point(80, 467);
+            this.pb_password.Mask = "";
+            this.pb_password.MaxLength = 32767;
+            this.pb_password.MouseState = MaterialSkin.MouseState.OUT;
+            this.pb_password.Name = "pb_password";
+            this.pb_password.PasswordChar = '*';
+            this.pb_password.PrefixSuffixText = null;
+            this.pb_password.PromptChar = '_';
+            this.pb_password.ReadOnly = false;
+            this.pb_password.RejectInputOnFirstFailure = false;
+            this.pb_password.ResetOnPrompt = true;
+            this.pb_password.ResetOnSpace = true;
+            this.pb_password.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.pb_password.SelectedText = "";
+            this.pb_password.SelectionLength = 0;
+            this.pb_password.SelectionStart = 0;
+            this.pb_password.ShortcutsEnabled = true;
+            this.pb_password.Size = new System.Drawing.Size(312, 48);
+            this.pb_password.SkipLiterals = true;
+            this.pb_password.TabIndex = 16;
+            this.pb_password.TabStop = false;
+            this.pb_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.pb_password.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.pb_password.TrailingIcon = null;
+            this.pb_password.UseSystemPasswordChar = false;
+            this.pb_password.ValidatingType = null;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel2.Location = new System.Drawing.Point(80, 429);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(89, 24);
+            this.materialLabel2.TabIndex = 15;
+            this.materialLabel2.Text = "Password";
+            // 
+            // tb_email
+            // 
+            this.tb_email.AllowPromptAsInput = true;
+            this.tb_email.AnimateReadOnly = false;
+            this.tb_email.AsciiOnly = false;
+            this.tb_email.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tb_email.BeepOnError = false;
+            this.tb_email.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.tb_email.Depth = 0;
+            this.tb_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb_email.HidePromptOnLeave = false;
+            this.tb_email.HideSelection = true;
+            this.tb_email.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.tb_email.LeadingIcon = null;
+            this.tb_email.Location = new System.Drawing.Point(80, 340);
+            this.tb_email.Mask = "";
+            this.tb_email.MaxLength = 32767;
+            this.tb_email.MouseState = MaterialSkin.MouseState.OUT;
+            this.tb_email.Name = "tb_email";
+            this.tb_email.PasswordChar = '\0';
+            this.tb_email.PrefixSuffixText = null;
+            this.tb_email.PromptChar = '_';
+            this.tb_email.ReadOnly = false;
+            this.tb_email.RejectInputOnFirstFailure = false;
+            this.tb_email.ResetOnPrompt = true;
+            this.tb_email.ResetOnSpace = true;
+            this.tb_email.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tb_email.SelectedText = "";
+            this.tb_email.SelectionLength = 0;
+            this.tb_email.SelectionStart = 0;
+            this.tb_email.ShortcutsEnabled = true;
+            this.tb_email.Size = new System.Drawing.Size(312, 48);
+            this.tb_email.SkipLiterals = true;
+            this.tb_email.TabIndex = 14;
+            this.tb_email.TabStop = false;
+            this.tb_email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tb_email.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.tb_email.TrailingIcon = null;
+            this.tb_email.UseSystemPasswordChar = false;
+            this.tb_email.ValidatingType = null;
             // 
             // materialLabel1
             // 
@@ -44,115 +225,26 @@
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel1.Location = new System.Drawing.Point(36, 325);
+            this.materialLabel1.Location = new System.Drawing.Point(80, 302);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(55, 24);
-            this.materialLabel1.TabIndex = 0;
-            this.materialLabel1.Text = "Email:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::veritabanidemo1.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 85);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 34F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H4;
-            this.materialLabel2.Location = new System.Drawing.Point(110, 210);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(256, 41);
-            this.materialLabel2.TabIndex = 2;
-            this.materialLabel2.Text = "Login to Account";
-            // 
-            // materialLabel3
-            // 
-            this.materialLabel3.AutoSize = true;
-            this.materialLabel3.Depth = 0;
-            this.materialLabel3.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
-            this.materialLabel3.Location = new System.Drawing.Point(36, 422);
-            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel3.Name = "materialLabel3";
-            this.materialLabel3.Size = new System.Drawing.Size(94, 24);
-            this.materialLabel3.TabIndex = 3;
-            this.materialLabel3.Text = "Password:";
-            // 
-            // materialTextBox1
-            // 
-            this.materialTextBox1.AnimateReadOnly = false;
-            this.materialTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox1.Depth = 0;
-            this.materialTextBox1.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox1.LeadingIcon = null;
-            this.materialTextBox1.Location = new System.Drawing.Point(170, 299);
-            this.materialTextBox1.MaxLength = 50;
-            this.materialTextBox1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox1.Multiline = false;
-            this.materialTextBox1.Name = "materialTextBox1";
-            this.materialTextBox1.Size = new System.Drawing.Size(238, 50);
-            this.materialTextBox1.TabIndex = 4;
-            this.materialTextBox1.Text = "";
-            this.materialTextBox1.TrailingIcon = null;
-            // 
-            // materialTextBox2
-            // 
-            this.materialTextBox2.AnimateReadOnly = false;
-            this.materialTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialTextBox2.Depth = 0;
-            this.materialTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox2.LeadingIcon = null;
-            this.materialTextBox2.Location = new System.Drawing.Point(170, 396);
-            this.materialTextBox2.MaxLength = 50;
-            this.materialTextBox2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox2.Multiline = false;
-            this.materialTextBox2.Name = "materialTextBox2";
-            this.materialTextBox2.Password = true;
-            this.materialTextBox2.Size = new System.Drawing.Size(238, 50);
-            this.materialTextBox2.TabIndex = 5;
-            this.materialTextBox2.Text = "";
-            this.materialTextBox2.TrailingIcon = null;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(3, 583);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(474, 36);
-            this.materialButton1.TabIndex = 6;
-            this.materialButton1.Text = "L O G I N";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialLabel1.Size = new System.Drawing.Size(50, 24);
+            this.materialLabel1.TabIndex = 13;
+            this.materialLabel1.Text = "Email";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 622);
-            this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.materialTextBox2);
-            this.Controls.Add(this.materialTextBox1);
+            this.ClientSize = new System.Drawing.Size(480, 671);
+            this.Controls.Add(this.btn_go_register);
+            this.Controls.Add(this.btn_forgot);
             this.Controls.Add(this.materialLabel3);
-            this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.pb_password);
+            this.Controls.Add(this.materialLabel2);
+            this.Controls.Add(this.tb_email);
             this.Controls.Add(this.materialLabel1);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -165,12 +257,14 @@
 
         #endregion
 
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private PictureBox pictureBox1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialButton btn_go_register;
+        private MaterialSkin.Controls.MaterialButton btn_forgot;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox1;
-        private MaterialSkin.Controls.MaterialTextBox materialTextBox2;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private PictureBox pictureBox1;
+        private MaterialSkin.Controls.MaterialButton btn_login;
+        private MaterialSkin.Controls.MaterialMaskedTextBox pb_password;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialMaskedTextBox tb_email;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
