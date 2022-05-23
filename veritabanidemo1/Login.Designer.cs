@@ -43,22 +43,16 @@
             // 
             // btn_go_register
             // 
-            this.btn_go_register.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_go_register.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_go_register.Depth = 0;
-            this.btn_go_register.HighEmphasis = true;
-            this.btn_go_register.Icon = null;
-            this.btn_go_register.Location = new System.Drawing.Point(80, 614);
-            this.btn_go_register.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btn_go_register.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btn_go_register.Name = "btn_go_register";
-            this.btn_go_register.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_go_register.Size = new System.Drawing.Size(89, 36);
-            this.btn_go_register.TabIndex = 21;
-            this.btn_go_register.Text = "REGISTER";
-            this.btn_go_register.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.btn_go_register.UseAccentColor = false;
-            this.btn_go_register.UseVisualStyleBackColor = true;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H6;
+            this.materialLabel1.Location = new System.Drawing.Point(36, 325);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(55, 24);
+            this.materialLabel1.TabIndex = 0;
+            this.materialLabel1.Text = "Email:";
             // 
             // btn_forgot
             // 
@@ -102,68 +96,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // btn_login
-            // 
-            this.btn_login.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_login.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btn_login.Depth = 0;
-            this.btn_login.HighEmphasis = true;
-            this.btn_login.Icon = null;
-            this.btn_login.Location = new System.Drawing.Point(80, 540);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btn_login.MinimumSize = new System.Drawing.Size(312, 48);
-            this.btn_login.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btn_login.Name = "btn_login";
-            this.btn_login.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btn_login.Size = new System.Drawing.Size(312, 48);
-            this.btn_login.TabIndex = 17;
-            this.btn_login.Text = "LOGIN";
-            this.btn_login.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btn_login.UseAccentColor = false;
-            this.btn_login.UseVisualStyleBackColor = true;
-            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
-            // 
-            // pb_password
-            // 
-            this.pb_password.AllowPromptAsInput = true;
-            this.pb_password.AnimateReadOnly = false;
-            this.pb_password.AsciiOnly = false;
-            this.pb_password.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pb_password.BeepOnError = false;
-            this.pb_password.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.pb_password.Depth = 0;
-            this.pb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.pb_password.HidePromptOnLeave = false;
-            this.pb_password.HideSelection = true;
-            this.pb_password.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.pb_password.LeadingIcon = null;
-            this.pb_password.Location = new System.Drawing.Point(80, 467);
-            this.pb_password.Mask = "";
-            this.pb_password.MaxLength = 32767;
-            this.pb_password.MouseState = MaterialSkin.MouseState.OUT;
-            this.pb_password.Name = "pb_password";
-            this.pb_password.PasswordChar = '*';
-            this.pb_password.PrefixSuffixText = null;
-            this.pb_password.PromptChar = '_';
-            this.pb_password.ReadOnly = false;
-            this.pb_password.RejectInputOnFirstFailure = false;
-            this.pb_password.ResetOnPrompt = true;
-            this.pb_password.ResetOnSpace = true;
-            this.pb_password.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pb_password.SelectedText = "";
-            this.pb_password.SelectionLength = 0;
-            this.pb_password.SelectionStart = 0;
-            this.pb_password.ShortcutsEnabled = true;
-            this.pb_password.Size = new System.Drawing.Size(312, 48);
-            this.pb_password.SkipLiterals = true;
-            this.pb_password.TabIndex = 16;
-            this.pb_password.TabStop = false;
-            this.pb_password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.pb_password.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.pb_password.TrailingIcon = null;
-            this.pb_password.UseSystemPasswordChar = false;
-            this.pb_password.ValidatingType = null;
             // 
             // materialLabel2
             // 
